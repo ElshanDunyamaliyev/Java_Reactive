@@ -23,7 +23,6 @@ public class FileReaderServiceImpl implements FileReaderService{
                     fluxSink.error(e);
                     throw new RuntimeException(e);
                 }
-                System.out.println("Testing git");
             });
         });
     }
