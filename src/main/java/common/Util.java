@@ -35,4 +35,12 @@ public class Util {
             throw new RuntimeException(e);
         }
     }
+
+    public static void sleep(int seconds){
+        try {
+            Thread.sleep(Duration.ofSeconds(seconds));
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+    }
 }
