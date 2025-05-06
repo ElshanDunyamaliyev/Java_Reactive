@@ -8,7 +8,7 @@ public class Lec01FluxCreateWithCold {
     // Flux create works with one subscriber only
     public static void main(String[] args) {
         var nameGenerator = new NameGenerator();
-        var fluxCreate = Flux.create(nameGenerator);
+        var fluxCreate = Flux.create(nameGenerator).share(); // Turning cold publisher to hot
 
         fluxCreate.subscribe(Util.subscriber("sub1"));
         fluxCreate.subscribe(Util.subscriber("sub2"));
