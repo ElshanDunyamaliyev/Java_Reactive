@@ -9,7 +9,7 @@ import reactor.core.scheduler.Schedulers;
 
 public class Lec02SubscribeOn {
     private static final Logger log = LoggerFactory.getLogger(Lec02SubscribeOn.class);
-
+    // Subscribe on ozunden yuxaridaki pipeline tesir edir (Upstream)
     public static void main(String[] args) {
         System.setProperty("reactor.schedulers.defaultBoundedElasticOnVirtualThreads","true");
 
